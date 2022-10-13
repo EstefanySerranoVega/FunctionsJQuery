@@ -10,6 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11ba4104c1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.btn-attr').click(function() {
+                alert('La imagen se encuentra en la Ruta: ' + $(".img-attr").attr("src"));
+                //alert('el color del width es: ' + r);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -20,6 +30,9 @@
 
                 </div>
                 <menu>
+                    <div class="menu-bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                     <ul>
                         <a href="#">
                             <li>INICIO </li>
@@ -50,8 +63,8 @@
             </div>
             <div class="content">
                 <div class="section section-one ">
-                    <div class="content-img">
-
+                    <div class="content-img img-one">
+                        <img Class="img-attr" src="img/img-attr.webp" alt="image attr">
                     </div>
                     <div class="content-questions ">
                         <div class="title">
@@ -62,20 +75,24 @@
                             <div class="question ">
                                 <h3>Function attr()</h3>
                             </div>
-                            <div class="answer ">
-                                <p>El primer uso de attr() es para recuperar el valor de un atributo. En este caso, el método debe recibir una cadena con el nombre del atributo que queremos recuperar.en el caso que invoquemos el método attr sobre un objeto
-                                    jQuery que contenga varios elementos a la vez, attr() en este caso devolvería el valor del atributo del primero de los elementos que haya en el objeto jQuery. Además, en caso que el elemento no tenga definido ese atributo
-                                    al que se pretenda acceder, devolvería undefined</p>
+                            <div class="answer answer-attr">
+                                <p>El método jQuery attr() sirve para acceder o establecer los valores de los atributos de un elemento de nuestra página. Cuando se utiliza el método attr() para devolver el valor del atributo, devuelve el valor del primer
+                                    elemento coincidente.</p>
+
+                                <p> <b>Sintaxis: </b>$(selector).attr(attribute,value);</p>
+                                <button class="btn-attr">Ver Ejemplo</button>
                             </div>
                         </div>
                         <div class="content-question ">
                             <div class="question ">
-                                <h3>Function Before</h3>
+                                <h3>Function Before()</h3>
                             </div>
                             <div class="answer ">
                                 <p>
                                     El método before() inserta contenido específico delante (antes) de los elementos seleccionados.
                                 </p>
+                                <p> <b>Sintaxis: </b>$(selector).before(content,function(index));</p>
+                                <button>Ver Ejemplo</button>
                             </div>
                         </div>
                         <div class="content-question ">
@@ -86,6 +103,9 @@
                                 <p>
                                     tiene como funcionalidad añadir o insertar contenido al comienzo del elemento seleccionado
                                 </p>
+
+                                <p> <b>Sintaxis: </b>$(selector).prepend(content,function(index,html));</p>
+                                <button>Ver Ejemplo</button>
                             </div>
                         </div>
                         <div class="content-question ">
@@ -94,7 +114,10 @@
                             </div>
                             <div class="answer ">
                                 <p>inserta contenido, especificado por el parámetro, después de cada elemento en el conjunto de elementos coincidentes.</p>
-                            </div>
+
+
+                                <p> <b>Sintaxis: </b>$(selector).after(content,function(index));</p>
+                                <button>Ver Ejemplo</button></div>
                         </div>
                     </div>
                 </div>
@@ -108,16 +131,22 @@
                                 <p>
                                     tiene como funcionalidad añadir o insertar contenido al final del elemento seleccionado
                                 </p>
+
+                                <p> <b>Sintaxis: </b>$(selector).append(content,function(index,html));</p>
+                                <button>Ver Ejemplo</button>
                             </div>
                         </div>
                         <div class="content-question ">
                             <div class="question ">
                                 <h3>Function Remove</h3>
                             </div>
-                            <div class="answer ">
+                            <div class="answer">
                                 <p>Con la funcíon de jQuery remove() podemos eliminar cualquier elemento (div, etiqueta html) y todo su contenido del DOM de nuestra web. Esto quiere decir que podemos eliminar los objetos y el contenido que contengan dentro
                                     de lo mismos (nodos hijos), el contenido y el elemento borrado nunca se eliminará físicamente del HTML si no dinámicamente del DOM</p>
-                            </div>
+
+
+                                <p> <b>Sintaxis: </b>$(selector).remove();</p>
+                                <button>Ver Ejemplo</button></div>
                         </div>
                         <div class="content-question ">
                             <div class="question ">
@@ -126,6 +155,9 @@
                             <div class="answer ">
                                 <p>El método hide() en jQuery se usa para ocultar los elementos web seleccionados. Este método se usa generalmente para efectos o animación en jQuery. También nos permite animar el comportamiento (transición) de ocultar algún
                                     elemento específico.</p>
+
+                                <p> <b>Sintaxis: </b>$(selector).hide(speed,easing,callback);</p>
+                                <button>Ver Ejemplo</button>
                             </div>
                         </div>
                         <div class="content-question ">
@@ -136,17 +168,20 @@
                                 <p>
                                     El método show() muestra los elementos ocultos seleccionados.
                                 </p>
+
+                                <p> <b>Sintaxis: </b>$(selector).show(speed,easing,callback);</p>
+                                <button>Ver Ejemplo</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="content-img ">
+                    <div class="content-img img-two">
 
                     </div>
                 </div>
             </div>
             <footer>
-                <p>© Derechos de autor reservados</p>
+                <p>© Derechos de autor reservados <i>Estefany Serrano Vega</i></p>
             </footer>
         </div>
     </div>
