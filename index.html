@@ -12,13 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/11ba4104c1.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $('.btn-attr').click(function() {
-                alert('La imagen se encuentra en la Ruta: ' + $(".img-attr").attr("src"));
-                //alert('el color del width es: ' + r);
-            });
-        });
+    <script type="text/javascript" src="jquery.js">
     </script>
 </head>
 
@@ -101,9 +95,8 @@
                     <div class="content-img img-one">
                         <img Class="img-attr" src="img/img-attr.webp" alt="image attr">
                     </div>
-                    <div class="content-questions ">
+                    <div class="content-questions">
                         <div class="title">
-
                             <h2>A continuacion veremos algunas funciones de JQuery junto con su sintaxis y algunos ejemplos</h2>
                         </div>
                         <div class="content-question ">
@@ -127,7 +120,7 @@
                                     El método before() inserta contenido específico delante (antes) de los elementos seleccionados.
                                 </p>
                                 <p> <b>Sintaxis: </b>$(selector).before(content,function(index));</p>
-                                <button>Ver Ejemplo</button>
+                                <button class="btn-before">Ver Ejemplo</button>
                             </div>
                         </div>
                         <div class="content-question ">
@@ -140,7 +133,7 @@
                                 </p>
 
                                 <p> <b>Sintaxis: </b>$(selector).prepend(content,function(index,html));</p>
-                                <button>Ver Ejemplo</button>
+                                <button class="btn-prepend">Ver Ejemplo</button>
                             </div>
                         </div>
                         <div class="content-question ">
@@ -152,7 +145,7 @@
 
 
                                 <p> <b>Sintaxis: </b>$(selector).after(content,function(index));</p>
-                                <button>Ver Ejemplo</button></div>
+                                <button class="btn-after">Ver Ejemplo</button></div>
                         </div>
                     </div>
                 </div>
@@ -168,7 +161,7 @@
                                 </p>
 
                                 <p> <b>Sintaxis: </b>$(selector).append(content,function(index,html));</p>
-                                <button>Ver Ejemplo</button>
+                                <button class="btn-append">Ver Ejemplo</button>
                             </div>
                         </div>
                         <div class="content-question ">
@@ -181,7 +174,7 @@
 
 
                                 <p> <b>Sintaxis: </b>$(selector).remove();</p>
-                                <button>Ver Ejemplo</button></div>
+                                <button class="btn-remove">Ver Ejemplo</button></div>
                         </div>
                         <div class="content-question ">
                             <div class="question ">
@@ -192,7 +185,7 @@
                                     elemento específico.</p>
 
                                 <p> <b>Sintaxis: </b>$(selector).hide(speed,easing,callback);</p>
-                                <button>Ver Ejemplo</button>
+                                <button class="btn-hide">Ver Ejemplo</button>
                             </div>
                         </div>
                         <div class="content-question ">
@@ -205,7 +198,7 @@
                                 </p>
 
                                 <p> <b>Sintaxis: </b>$(selector).show(speed,easing,callback);</p>
-                                <button>Ver Ejemplo</button>
+                                <button class="btn-show">Ver Ejemplo</button>
                             </div>
                         </div>
                     </div>

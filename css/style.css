@@ -135,6 +135,7 @@ menu ul li:hover ul li:hover {
     height: 80%;
     background: orange;
     border-radius: 0.8rem;
+    overflow: overlay;
 }
 
 .content-questions {
@@ -196,6 +197,12 @@ menu ul li:hover ul li:hover {
 button:hover {
     color: #fff;
     box-shadow: 2px 2px 10px 0px #0005;
+}
+
+.content-img img {
+    width: 15rem;
+    border-radius: 0.8rem;
+    margin: 0.5rem;
 }
 
 .img-attr {
@@ -285,20 +292,71 @@ button:hover {
 @media(max-width:650px) {
     header {
         width: 100%;
+        margin: 0;
+    }
+    header .logo {
+        width: 6rem;
     }
     header menu {
-        width: 100%;
+        width: 50%;
         background: #f2f2f2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
     menu ul {
+        display: none;
         width: 100%;
         list-style: none;
     }
     menu ul li {
+        display: none;
         width: 100%;
         list-style: none;
     }
     menu ul li:hover {
         background: rgb(188, 249, 255);
+    }
+    .section-one {
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-img,
+    .img-attr {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    .content-questions {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        width: 98%;
+        background: skyblue;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .content-question {
+        width: 98%;
+        height: auto;
+        padding: 0.4rem;
+        margin: 0.8rem 0;
+    }
+    .answer {
+        width: 99%;
+    }
+    .answer button {
+        top: 10%;
+        left: 70%;
     }
 }
